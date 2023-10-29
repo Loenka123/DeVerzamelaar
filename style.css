@@ -1,0 +1,335 @@
+@font-face {
+    font-family: Verner;
+    src: url(font/Verner.woff2);
+}
+body {
+    margin: 0;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+#Stickynavbar {
+    background-color: #ffffff;
+    color: #14141e;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#Stickynavbar .navbar-content {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+#Stickynavbar .text {
+    margin: 0;
+    font-family: Verner;
+    font-size: xx-large;
+    color: #8C001A;
+    text-decoration: none;
+}
+#Stickynavbar a {
+    text-decoration: none;
+}
+.buttons {
+    text-align: end;
+    position: relative;
+    padding: 12.5px;
+}
+.home, .contact {
+    color: #8C001A;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.admin {
+    background-color: #8C001A;
+    width: 80px;
+    height: 35px;
+    margin-left: 20px;
+    border: 2px solid #8C001A;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.admin:hover {
+    background-color: #770117;
+    border: 2px solid #770117;
+}
+#info{
+    color: black;
+    margin-top: 4.2vh;
+    text-align: center;
+    line-height: 15px;
+}
+#info h1 {
+    font-family: Verner;
+}
+.row {
+    margin-top: 4.5vh;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row2 {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.linksDiv {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linksDiv img {
+    width: 5vh;
+}  
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+footer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+}
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+input[type=text], input[type=email],input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #8C001A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+input[type=submit]:hover {
+    background-color: #770117;
+}
+.contactText {
+  text-align: center;
+  margin-top: 25px;
+  line-height: 15px;
+}
+.contactText h1 {
+    font-family: Verner;
+}
+.adminText {
+    text-align: center;
+    margin-top: 25px;
+    line-height: 15px;
+}
+.adminText h1 {
+    font-family: Verner;
+}
+.container {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#items {
+    margin-top: 2.5vh;
+}
+.row2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+.column2 {
+    flex-basis: calc(33.33% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.afbeelding-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 55%; 
+}
+.afbeelding-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-container {
+    position: relative;
+}
+.item-naam {
+    position: absolute;
+    bottom: 50px;
+    left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7.5px;
+    border-radius: 7.5px;
+}
+.item-beschrijving {
+    position: absolute;
+    bottom: 27.5px;
+    left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3px;
+    border-radius: 3px;
+    font-size: small;
+}
+.item-prijs {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3px;
+    border-radius: 3px;
+    font-size: small;
+}
+
+.product-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 2vh;
+}
+.product-container img {
+    max-width: 100%;
+    height: auto;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C001A;
+}
+.koop-button {
+    background-color: #8C001A;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.koop-button:hover {
+    background-color: #770117;
+}
+
+.alert-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 25%;
+    height: auto;
+    border-radius: 15px;
+}
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: larger;
+}
+.centered-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.admin-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+}
+.admin-info {
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+#admin-tekst {
+    color: black;
+    margin-top: 2vh;
+    text-align: center;
+    line-height: 15px;
+}
+#admin-tekst h1 {
+    font-family: Verner;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type="submit"] {
+    background-color: #8C001A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+}
+input[type="submit"]:hover {
+    background-color: #770117;
+}
